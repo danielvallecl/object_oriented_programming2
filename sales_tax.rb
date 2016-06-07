@@ -67,41 +67,32 @@ class Receipt
     total += item.price
   end
     total.round(2)
+  end
 end
-end
 
-#Book Object#
-
-book = Item.new("Book", 12.49, false)
-
-receipt = Receipt.new
-receipt.add(book)
-
-# puts book.tax
-# puts book.total
-
-puts "=================="
-
-#Music CD Object#
-
-music = Item.new("Music CD", 14.99, false)
-# puts music.tax
-# puts music.total
-receipt.add(music)
-
-
-puts "=================="
-
-#Chocolate Bar Object#
-
-box_of_chocolates = Item.new("Chocolate Box", 10.00, true)
-
-# puts box_of_chocolates.tax
-# puts box_of_chocolates.total
-receipt.add(box_of_chocolates)
-
-receipt.print_receipt
-
-# receipt.add(chocolate_bar)
+# receipt = Receipt.new
+#
+# book = Item.new("Book", 12.49, false)
+#
+# receipt.add(book)
+#
+# puts "=================="
+#
+# music = Item.new("Music CD", 14.99, false)
+# # puts music.tax
+# # puts music.total
+# receipt.add(music)
+#
+# puts "=================="
+#
+# box_of_chocolates = Item.new("Chocolate Box", 10.00, true)
+#
+# # puts box_of_chocolates.tax
+# # puts box_of_chocolates.total
+# receipt.add(box_of_chocolates)
 #
 # receipt.print_receipt
+#
+# # receipt.add(chocolate_bar)
+# #
+# # receipt.print_receipt
